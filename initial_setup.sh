@@ -1,8 +1,8 @@
 echo [$(date)]: "START"
 echo [$(date)]: "creating environment"
-conda create --prefix ./env python=3.8 -y
+conda create -n  NER python=3.9 -y
 echo [$(date)]: "activate environment"
-source activate ./env
+conda.bat  activate NER
 echo [$(date)]: "install requirements"
 pip install -r requirements.txt
 echo [$(date)]: "END"
