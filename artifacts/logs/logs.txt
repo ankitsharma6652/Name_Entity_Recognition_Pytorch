@@ -1,0 +1,216 @@
+[ 2022-07-03 14:36:25,662 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:36:25,664 ] ner.config.configurations - ERROR - [Errno 2] No such file or directory: 'C:\\Users\\ankit\\config.yaml'
+Traceback (most recent call last):
+  File "d:\nlp projects\name_entity_recognition_pytorch\name_entity_recognition_pytorch\ner\config\configurations.py", line 19, in __init__
+    self.config = read_config(file_name=CONFIG_FILE_NAME)
+  File "d:\nlp projects\name_entity_recognition_pytorch\name_entity_recognition_pytorch\ner\utils\util.py", line 15, in read_config
+    with open(config_path) as config_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ankit\\config.yaml'
+[ 2022-07-03 14:38:47,241 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:38:47,242 ] ner.config.configurations - ERROR - [Errno 2] No such file or directory: 'C:\\Users\\ankit\\config.yaml'
+Traceback (most recent call last):
+  File "d:\nlp projects\name_entity_recognition_pytorch\name_entity_recognition_pytorch\ner\config\configurations.py", line 19, in __init__
+    self.config = read_config(file_name=CONFIG_FILE_NAME)
+  File "d:\nlp projects\name_entity_recognition_pytorch\name_entity_recognition_pytorch\ner\utils\util.py", line 15, in read_config
+    with open(config_path) as config_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ankit\\config.yaml'
+[ 2022-07-03 14:39:18,854 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:39:18,865 ] __main__ - INFO -  Data Ingestion Log Started 
+[ 2022-07-03 14:39:32,830 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:39:32,833 ] __main__ - INFO -  Data Ingestion Log Started 
+[ 2022-07-03 14:42:02,382 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:42:02,386 ] __main__ - INFO -  Data Ingestion Log Started 
+[ 2022-07-03 14:42:12,985 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:42:12,988 ] __main__ - INFO -  Data Ingestion Log Started 
+[ 2022-07-03 14:42:37,524 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:42:37,528 ] __main__ - INFO -  Data Ingestion Log Started 
+[ 2022-07-03 14:42:52,202 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:42:52,205 ] __main__ - INFO -  Data Ingestion Log Started 
+[ 2022-07-03 14:45:21,226 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:45:21,230 ] __main__ - INFO -  Data Ingestion Log Started 
+[ 2022-07-03 14:45:21,230 ] __main__ - INFO - Loading Data from Hugging face 
+[ 2022-07-03 14:45:21,238 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+[ 2022-07-03 14:45:22,452 ] urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-03 14:45:22,457 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:45:23,000 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-03 14:45:23,005 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:45:23,152 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "GET /huggingface/datasets/1.13.0/datasets/xtreme/xtreme.py HTTP/1.1" 200 9064
+[ 2022-07-03 14:45:23,174 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:45:23,626 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/dataset_infos.json HTTP/1.1" 200 0
+[ 2022-07-03 14:45:23,631 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:45:23,789 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "GET /huggingface/datasets/1.13.0/datasets/xtreme/dataset_infos.json HTTP/1.1" 200 23078
+[ 2022-07-03 14:45:23,901 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): storage.googleapis.com:443
+[ 2022-07-03 14:45:24,674 ] urllib3.connectionpool - DEBUG - https://storage.googleapis.com:443 "HEAD /huggingface-nlp/cache/datasets/xtreme/PAN-X.en/1.0.0/dataset_info.json HTTP/1.1" 404 0
+[ 2022-07-03 14:45:24,678 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+[ 2022-07-03 14:45:25,857 ] urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/wikiann/1.1.0/panx_dataset.zip HTTP/1.1" 200 0
+[ 2022-07-03 14:45:25,864 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+[ 2022-07-03 14:45:27,107 ] urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "GET /datasets.huggingface.co/wikiann/1.1.0/panx_dataset.zip HTTP/1.1" 200 234008884
+[ 2022-07-03 14:47:07,456 ] __main__ - INFO - Dataset Info : DatasetDict({
+    validation: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    test: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    train: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 20000
+    })
+})
+[ 2022-07-03 14:47:07,458 ] __main__ - ERROR - 
+        Error occured in script: 
+        [ D:\NLP Projects\Name_Entity_Recognition_Pytorch\Name_Entity_Recognition_Pytorch\ner\components\data_ingestion.py ] at 
+        try block line number: [32] and exception block line number: [37] 
+        error message: [Invalid file path or buffer object type: <class 'datasets.dataset_dict.DatasetDict'>]
+        
+[ 2022-07-03 14:47:37,957 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:47:37,960 ] __main__ - INFO -  Data Ingestion Log Started 
+[ 2022-07-03 14:47:37,961 ] __main__ - INFO - Loading Data from Hugging face 
+[ 2022-07-03 14:47:37,964 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+[ 2022-07-03 14:47:39,265 ] urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-03 14:47:39,272 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:47:39,450 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-03 14:47:39,456 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:47:39,665 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/dataset_infos.json HTTP/1.1" 200 0
+[ 2022-07-03 14:47:39,739 ] datasets.builder - WARNING - Reusing dataset xtreme (C:\Users\ankit\.cache\huggingface\datasets\xtreme\PAN-X.en\1.0.0\fb182342ff5c7a211ebf678cde070463acd29524b30b87f8f38c617948c2826a)
+[ 2022-07-03 14:47:39,750 ] __main__ - INFO - Dataset Info : DatasetDict({
+    validation: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    test: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    train: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 20000
+    })
+})
+[ 2022-07-03 14:47:39,751 ] __main__ - ERROR - 
+        Error occured in script: 
+        [ D:\NLP Projects\Name_Entity_Recognition_Pytorch\Name_Entity_Recognition_Pytorch\ner\components\data_ingestion.py ] at 
+        try block line number: [32] and exception block line number: [37] 
+        error message: [Invalid file path or buffer object type: <class 'datasets.dataset_dict.DatasetDict'>]
+        
+[ 2022-07-03 14:51:35,403 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:51:35,406 ] __main__ - INFO -  Data Ingestion Log Started 
+[ 2022-07-03 14:51:35,407 ] __main__ - INFO - Loading Data from Hugging face 
+[ 2022-07-03 14:51:35,407 ] __main__ - ERROR - 
+        Error occured in script: 
+        [ D:\NLP Projects\Name_Entity_Recognition_Pytorch\Name_Entity_Recognition_Pytorch\ner\components\data_ingestion.py ] at 
+        try block line number: [31] and exception block line number: [39] 
+        error message: [name 'os' is not defined]
+        
+[ 2022-07-03 14:52:05,073 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:52:05,076 ] __main__ - INFO -  Data Ingestion Log Started 
+[ 2022-07-03 14:52:05,077 ] __main__ - INFO - Loading Data from Hugging face 
+[ 2022-07-03 14:52:05,079 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+[ 2022-07-03 14:52:06,353 ] urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-03 14:52:06,358 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:52:06,805 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-03 14:52:06,810 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:52:07,252 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/dataset_infos.json HTTP/1.1" 200 0
+[ 2022-07-03 14:52:07,292 ] __main__ - ERROR - 
+        Error occured in script: 
+        [ D:\NLP Projects\Name_Entity_Recognition_Pytorch\Name_Entity_Recognition_Pytorch\ner\components\data_ingestion.py ] at 
+        try block line number: [31] and exception block line number: [40] 
+        error message: [BuilderConfig XtremeConfig(name='PAN-X.en', version=1.0.0, data_dir=None, data_files=None, description='The WikiANN dataset (Pan et al. 2017) is a dataset with NER annotations for PER, ORG and LOC. It has been\nconstructed using the linked entities in Wikipedia pages for 282 different languages including Danish. The dataset\ncan be loaded with the DaNLP package:') doesn't have a 'cache' key.]
+        
+[ 2022-07-03 14:53:09,372 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:53:09,376 ] __main__ - INFO -  Data Ingestion Log Started 
+[ 2022-07-03 14:53:09,377 ] __main__ - INFO - Loading Data from Hugging face 
+[ 2022-07-03 14:53:09,380 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+[ 2022-07-03 14:53:10,716 ] urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-03 14:53:10,720 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:53:10,886 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-03 14:53:10,892 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:53:11,071 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/dataset_infos.json HTTP/1.1" 200 0
+[ 2022-07-03 14:53:11,113 ] __main__ - ERROR - 
+        Error occured in script: 
+        [ D:\NLP Projects\Name_Entity_Recognition_Pytorch\Name_Entity_Recognition_Pytorch\ner\components\data_ingestion.py ] at 
+        try block line number: [32] and exception block line number: [41] 
+        error message: [BuilderConfig XtremeConfig(name='PAN-X.en', version=1.0.0, data_dir=None, data_files=None, description='The WikiANN dataset (Pan et al. 2017) is a dataset with NER annotations for PER, ORG and LOC. It has been\nconstructed using the linked entities in Wikipedia pages for 282 different languages including Danish. The dataset\ncan be loaded with the DaNLP package:') doesn't have a 'cache' key.]
+        
+[ 2022-07-03 14:54:50,210 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:54:50,215 ] __main__ - INFO -  Data Ingestion Log Started 
+[ 2022-07-03 14:54:50,215 ] __main__ - INFO - Loading Data from Hugging face 
+[ 2022-07-03 14:54:50,218 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+[ 2022-07-03 14:54:51,569 ] urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-03 14:54:51,573 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:54:51,762 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-03 14:54:51,768 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:54:51,966 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/dataset_infos.json HTTP/1.1" 200 0
+[ 2022-07-03 14:54:52,008 ] __main__ - ERROR - 
+        Error occured in script: 
+        [ D:\NLP Projects\Name_Entity_Recognition_Pytorch\Name_Entity_Recognition_Pytorch\ner\components\data_ingestion.py ] at 
+        try block line number: [32] and exception block line number: [41] 
+        error message: [BuilderConfig XtremeConfig(name='PAN-X.en', version=1.0.0, data_dir=None, data_files=None, description='The WikiANN dataset (Pan et al. 2017) is a dataset with NER annotations for PER, ORG and LOC. It has been\nconstructed using the linked entities in Wikipedia pages for 282 different languages including Danish. The dataset\ncan be loaded with the DaNLP package:') doesn't have a 'cache' key.]
+        
+[ 2022-07-03 14:55:08,201 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:55:08,205 ] __main__ - INFO -  Data Ingestion Log Started 
+[ 2022-07-03 14:55:08,205 ] __main__ - INFO - Loading Data from Hugging face 
+[ 2022-07-03 14:55:08,209 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+[ 2022-07-03 14:55:09,495 ] urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-03 14:55:09,499 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:55:09,676 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-03 14:55:09,682 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:55:09,876 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/dataset_infos.json HTTP/1.1" 200 0
+[ 2022-07-03 14:55:09,940 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): storage.googleapis.com:443
+[ 2022-07-03 14:55:10,739 ] urllib3.connectionpool - DEBUG - https://storage.googleapis.com:443 "HEAD /huggingface-nlp/cache/datasets/xtreme/PAN-X.en/1.0.0/dataset_info.json HTTP/1.1" 404 0
+[ 2022-07-03 14:55:10,747 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+[ 2022-07-03 14:55:12,066 ] urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/wikiann/1.1.0/panx_dataset.zip HTTP/1.1" 200 0
+[ 2022-07-03 14:55:12,074 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+[ 2022-07-03 14:55:13,334 ] urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "GET /datasets.huggingface.co/wikiann/1.1.0/panx_dataset.zip HTTP/1.1" 200 234008884
+[ 2022-07-03 14:57:04,212 ] __main__ - INFO - Dataset Info : DatasetDict({
+    validation: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    test: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    train: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 20000
+    })
+})
+[ 2022-07-03 14:57:04,216 ] __main__ - ERROR - 
+        Error occured in script: 
+        [ D:\NLP Projects\Name_Entity_Recognition_Pytorch\Name_Entity_Recognition_Pytorch\ner\components\data_ingestion.py ] at 
+        try block line number: [36] and exception block line number: [41] 
+        error message: [Invalid file path or buffer object type: <class 'datasets.dataset_dict.DatasetDict'>]
+        
+[ 2022-07-03 14:58:30,340 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-03 14:58:30,343 ] __main__ - INFO -  Data Ingestion Log Started 
+[ 2022-07-03 14:58:30,344 ] __main__ - INFO - Loading Data from Hugging face 
+[ 2022-07-03 14:58:30,347 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+[ 2022-07-03 14:58:31,672 ] urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-03 14:58:31,679 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:58:32,105 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-03 14:58:32,111 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-03 14:58:32,540 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/dataset_infos.json HTTP/1.1" 200 0
+[ 2022-07-03 14:58:32,609 ] datasets.builder - WARNING - Reusing dataset xtreme (artifacts\data_store\xtreme\PAN-X.en\1.0.0\fb182342ff5c7a211ebf678cde070463acd29524b30b87f8f38c617948c2826a)
+[ 2022-07-03 14:58:32,619 ] __main__ - INFO - Dataset Info : DatasetDict({
+    validation: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    test: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    train: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 20000
+    })
+})
+[ 2022-07-03 14:58:32,620 ] __main__ - ERROR - 
+        Error occured in script: 
+        [ D:\NLP Projects\Name_Entity_Recognition_Pytorch\Name_Entity_Recognition_Pytorch\ner\components\data_ingestion.py ] at 
+        try block line number: [36] and exception block line number: [41] 
+        error message: [Invalid file path or buffer object type: <class 'datasets.dataset_dict.DatasetDict'>]
+        

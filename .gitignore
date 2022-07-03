@@ -1,0 +1,6 @@
+# Project exclude paths
+/env/
+.idea
+__pycache__/
+artifacts/model_weight/
+artifacts/data_store
