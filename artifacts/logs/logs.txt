@@ -214,3 +214,114 @@ FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ankit\\confi
         try block line number: [36] and exception block line number: [41] 
         error message: [Invalid file path or buffer object type: <class 'datasets.dataset_dict.DatasetDict'>]
         
+[ 2022-07-06 06:29:47,764 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2022-07-06 06:29:48,546 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-07-06 06:29:48,546 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-07-06 06:29:48,547 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-07-06 06:29:48,547 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-07-06 06:29:55,646 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-06 06:29:55,654 ] ner.components.data_ingestion - INFO -  Data Ingestion Log Started 
+[ 2022-07-06 06:29:55,654 ] ner.components.data_ingestion - INFO - Loading Data from Hugging face 
+[ 2022-07-06 06:29:55,669 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+[ 2022-07-06 06:29:56,975 ] urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-06 06:29:56,989 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-06 06:29:57,602 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-06 06:29:57,638 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-06 06:29:58,528 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/dataset_infos.json HTTP/1.1" 200 0
+[ 2022-07-06 06:29:58,690 ] datasets.builder - WARNING - Reusing dataset xtreme (artifacts\data_store\xtreme\PAN-X.en\1.0.0\fb182342ff5c7a211ebf678cde070463acd29524b30b87f8f38c617948c2826a)
+[ 2022-07-06 06:29:58,778 ] ner.components.data_ingestion - INFO - Dataset Info : DatasetDict({
+    validation: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    test: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    train: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 20000
+    })
+})
+[ 2022-07-06 06:29:58,779 ] __main__ - INFO -  Data Validation Started 
+[ 2022-07-06 06:29:58,779 ] __main__ - INFO -  Checks Initiated  
+[ 2022-07-06 06:29:58,779 ] __main__ - INFO -  Checking Columns of all the splits 
+[ 2022-07-06 06:30:05,150 ] __main__ - INFO -  Check Results [3, 3, 3]
+[ 2022-07-06 06:30:05,150 ] __main__ - INFO -  Checking type check of all the splits 
+[ 2022-07-06 06:30:05,152 ] __main__ - INFO -  Checking null check of all the splits 
+[ 2022-07-06 06:30:05,152 ] __main__ - INFO -  Checks Completed Result : [[True, True, True]]
+[ 2022-07-06 06:30:05,152 ] __main__ - INFO -  Checking type check of all the splits 
+[ 2022-07-06 06:34:44,200 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2022-07-06 06:34:44,632 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-07-06 06:34:44,632 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-07-06 06:34:44,632 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-07-06 06:34:44,632 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-07-06 06:34:48,714 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-06 06:34:48,720 ] ner.components.data_ingestion - INFO -  Data Ingestion Log Started 
+[ 2022-07-06 06:34:48,720 ] ner.components.data_ingestion - INFO - Loading Data from Hugging face 
+[ 2022-07-06 06:34:48,726 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+[ 2022-07-06 06:34:49,988 ] urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-06 06:34:49,995 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-06 06:34:50,165 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-06 06:34:50,175 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-06 06:34:50,336 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/dataset_infos.json HTTP/1.1" 200 0
+[ 2022-07-06 06:34:50,466 ] datasets.builder - WARNING - Reusing dataset xtreme (artifacts\data_store\xtreme\PAN-X.en\1.0.0\fb182342ff5c7a211ebf678cde070463acd29524b30b87f8f38c617948c2826a)
+[ 2022-07-06 06:34:50,483 ] ner.components.data_ingestion - INFO - Dataset Info : DatasetDict({
+    validation: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    test: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    train: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 20000
+    })
+})
+[ 2022-07-06 06:34:50,486 ] __main__ - INFO -  Data Validation Started 
+[ 2022-07-06 06:34:50,487 ] __main__ - INFO -  Checks Initiated  
+[ 2022-07-06 06:34:50,487 ] __main__ - INFO -  Checking Columns of all the splits 
+[ 2022-07-06 06:34:56,607 ] __main__ - INFO -  Check Results [3, 3, 3]
+[ 2022-07-06 06:34:56,607 ] __main__ - INFO -  Checking type check of all the splits 
+[ 2022-07-06 06:34:56,612 ] __main__ - INFO -  Checking null check of all the splits 
+[ 2022-07-06 06:34:56,612 ] __main__ - INFO -  Checks Completed Result : [[True, True, True]]
+[ 2022-07-06 06:34:56,612 ] __main__ - INFO -  Checking type check of all the splits 
+[ 2022-07-06 06:35:18,290 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2022-07-06 06:35:18,717 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-07-06 06:35:18,717 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-07-06 06:35:18,717 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-07-06 06:35:18,717 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-07-06 06:35:22,832 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-07-06 06:35:22,838 ] ner.components.data_ingestion - INFO -  Data Ingestion Log Started 
+[ 2022-07-06 06:35:22,839 ] ner.components.data_ingestion - INFO - Loading Data from Hugging face 
+[ 2022-07-06 06:35:22,845 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+[ 2022-07-06 06:35:24,167 ] urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-06 06:35:24,174 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-06 06:35:24,625 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-07-06 06:35:24,633 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-07-06 06:35:25,070 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/dataset_infos.json HTTP/1.1" 200 0
+[ 2022-07-06 06:35:25,190 ] datasets.builder - WARNING - Reusing dataset xtreme (artifacts\data_store\xtreme\PAN-X.en\1.0.0\fb182342ff5c7a211ebf678cde070463acd29524b30b87f8f38c617948c2826a)
+[ 2022-07-06 06:35:25,209 ] ner.components.data_ingestion - INFO - Dataset Info : DatasetDict({
+    validation: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    test: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    train: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 20000
+    })
+})
+[ 2022-07-06 06:35:25,211 ] __main__ - INFO -  Data Validation Started 
+[ 2022-07-06 06:35:25,212 ] __main__ - INFO -  Checks Initiated  
+[ 2022-07-06 06:35:25,212 ] __main__ - INFO -  Checking Columns of all the splits 
+[ 2022-07-06 06:35:31,252 ] __main__ - INFO -  Check Results [3, 3, 3]
+[ 2022-07-06 06:35:31,252 ] __main__ - INFO -  Checking type check of all the splits 
+[ 2022-07-06 06:35:31,254 ] __main__ - INFO -  Checking null check of all the splits 
+[ 2022-07-06 06:35:31,255 ] __main__ - INFO -  Checks Completed Result : [[True, True, True]]
+[ 2022-07-06 06:35:31,255 ] __main__ - INFO -  Checking type check of all the splits 
