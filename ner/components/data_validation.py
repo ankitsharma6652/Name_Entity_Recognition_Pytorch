@@ -42,6 +42,8 @@ class DataValidation:
         try:
             """ Implement Type Check Here """
             logger.info(" Checking type check of all the splits ")
+            for split_name in self.data_validation_config.data_split:
+                print(type(self.data[split_name]))
             result = self.data_validation_config.type_check
             return True
         except Exception as e:
@@ -80,4 +82,5 @@ if __name__ == "__main__":
     validate = DataValidation(data_validation_config=project_config.get_data_validation_config()
                               , data=en_data)
     check = validate.drive_checks()
-    print(check)
+    # print(check)
+    print(validate.type_check())
