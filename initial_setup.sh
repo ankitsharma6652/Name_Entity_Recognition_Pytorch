@@ -1,8 +1,11 @@
 echo [$(date)]: "START"
 echo [$(date)]: "creating environment"
-conda create -n  NER python=3.9 -y
+conda create --prefix ./env python=3.9 -y
 echo [$(date)]: "activate environment"
-conda.bat  activate NER
+source activate ./env
 echo [$(date)]: "install requirements"
 pip install -r requirements.txt
 echo [$(date)]: "END"
+
+# to remove everything -
+# rm -rf env/ .gitignore conda.yaml README.md .git/
