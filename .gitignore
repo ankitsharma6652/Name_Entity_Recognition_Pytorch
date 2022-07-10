@@ -4,4 +4,5 @@
 __pycache__/
 artifacts/model_weight/
 artifacts/data_store
-artifacts/logs/*.txt
+artifacts/logs/logs.txt
+

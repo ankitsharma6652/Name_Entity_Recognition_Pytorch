@@ -19,9 +19,7 @@ data_validation_config:
     - ner_tags
     - langs
 
-  type_check:
-    -
-    -
+  type_check: datasets.arrow_dataset.Dataset
 
   null_check:
     -
