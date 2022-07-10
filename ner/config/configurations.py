@@ -50,8 +50,8 @@ class Configuration:
             split = self.config[DATA_VALIDATION_KEY][DATA_SPLIT]
             columns = self.config[DATA_VALIDATION_KEY][COLUMNS_CHECK]
 
-            null_value_check = self.config[DATA_VALIDATION_KEY][TYPE_CHECK]
-            type_check = self.config[DATA_VALIDATION_KEY][NULL_CHECK]
+            null_value_check = self.config[DATA_VALIDATION_KEY][NULL_CHECK]     
+            type_check = self.config[DATA_VALIDATION_KEY][TYPE_CHECK]
 
             data_validation_config = DataValidationConfig(
                 dataset=None,
