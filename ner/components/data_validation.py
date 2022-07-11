@@ -42,14 +42,13 @@ class DataValidation:
         try:
             """ Implement Type Check Here """
             logger.info(" Checking type check of all the splits ")
-            print((self.data_validation_config.type_check))
+            # print((self.data_validation_config.type_check))
             for split_name in self.data_validation_config.data_split:
                 
-                # print(str(type(self.data[split_name])).__contains__("datasets.arrow_dataset.Dataset"))
                 if str(type(self.data[split_name])).__contains__(self.data_validation_config.type_check):
-                    # print("Data type is correct")
+                    
                     logger.info(f"Data type is correct")
-                    return True
+                    
                 else:
                     logger.info(f"Data type is not correct")
                     return False
@@ -65,17 +64,15 @@ class DataValidation:
         try:
             """ Implement null Check Here """
             logger.info(" Checking null check of all the splits ")
-            # result = self.data_validation_config.null_check
-            # return True
-            column_names = self.data_validation_config.keys()
-            for i in column_names:
-                if (type(self.data_validation_config[i]) == int) and (self.data_validation_config[i].isnull()==True):
-                    self.data_validation_config[i].fillna(self.data_validation_config[i].mean(), inplace=True)
-                    logger.info(f"Null check is Actioned")
-                    return True
+            for split_name in self.data_validation_config.data_split:
+                # print(pd.DataFrame(pd.DataFrame(self.data[split_name]).isnull()))
+                if not (pd.DataFrame(self.data[split_name]).isnull().values.any()):
+                    pass
                 else:
-                    logger.info(f"Column name maynot be numeric type")
                     return False
+            return True
+            
+        
         except Exception as e:
             logger.exception(e)
             raise CustomException(e, sys)
@@ -103,5 +100,5 @@ if __name__ == "__main__":
                               , data=en_data)
     # check = validate.drive_checks()
     # print(check)
-    print(validate.type_check())
-    # validate.null_check()
+    # print(validate.type_check())
+    print(validate.null_check())
